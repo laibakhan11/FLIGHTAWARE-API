@@ -14,7 +14,7 @@ db = client["flight_tracker"]
 active = db["active_flights"]
 completed = db["completed_flights"]
 
-# Indexes for better performance
+# Indexes
 active.create_index("flight_id", unique=True)
 active.create_index([("origin", 1), ("destination", 1)])
 completed.create_index("flight_id")
