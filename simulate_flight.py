@@ -63,7 +63,7 @@ landing = {
 try:
     r = requests.post(API, json=landing)
     if r.status_code == 200:
-        print(f"✅ {r.json()['message']}")
+        print(f"{r.json()['message']}")
         print(f"\n Complete!")
         print(f"View: http://127.0.0.1:8000/track/{FLIGHT_ID}")
         print(f" Map: python view_map.py {FLIGHT_ID}")
