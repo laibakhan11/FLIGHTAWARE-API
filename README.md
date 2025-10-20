@@ -49,11 +49,11 @@ Filters by origin/destination.
 Collections in database:
 1. active_flights: Ongoing flights (flight ID, path, status).
 Indexes: flight_id (unique), origin/destination (compound).
-2.completed_flights: Archived flights.
+2. completed_flights: Archived flights.
 Index: flight_id.
 
 
 ## Files
-main.py: FastAPI app with endpoints and MongoDB logic.
-client.py: Simulates flight GPS pings.
-view_map.py: Generates HTML map with path and markers.
+1. main.py: FastAPI app with endpoints and MongoDB logic.
+2. client.py: Simulates flight GPS pings.
+3. view_map.py: Generates HTML map with path and markers.
