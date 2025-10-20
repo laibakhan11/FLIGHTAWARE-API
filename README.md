@@ -1,19 +1,12 @@
-Flight Tracker API
+#Flight Tracker API
 A FastAPI-based API for tracking aircraft GPS data using MongoDB. Stores active and completed flights, supports time-based filtering, and includes scripts to simulate flights and visualize paths with Folium.
-Requirements
 
+#Requirements
 Python: 3.8+
 MongoDB: Local or via MONGODB_URI
 Packages: fastapi, uvicorn, pymongo, requests, folium
 
-API Endpoints
-
-Method
-Endpoint
-Description
-
-
-
+#API Endpoints
 GET
 /
 Lists endpoints.
@@ -49,14 +42,11 @@ GET
 Filters by origin/destination.
 
 
-Database
-MongoDB with flight_tracker database:
-
-active_flights: Ongoing flights (flight ID, path, status).
+#Database:MongoDB 
+Collections:
+1)active_flights: Ongoing flights (flight ID, path, status).
 Indexes: flight_id (unique), origin/destination (compound).
-
-
-completed_flights: Archived flights.
+2)completed_flights: Archived flights.
 Index: flight_id.
 
 
