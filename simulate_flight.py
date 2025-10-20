@@ -15,8 +15,8 @@ altitude = 35000
 NUM_PINGS = 15
 DELAY = 2
 
-print(f"🛫 Flight {FLIGHT_ID}: {ORIGIN} → {DESTINATION}")
-print(f"📡 Sending {NUM_PINGS} GPS pings...\n")
+print(f"Flight {FLIGHT_ID}: {ORIGIN} → {DESTINATION}")
+print(f"Sending {NUM_PINGS} GPS pings...\n")
 
 for i in range(NUM_PINGS):
     current_lat = lat - (i * 0.15)
