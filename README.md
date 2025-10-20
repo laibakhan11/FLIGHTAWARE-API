@@ -9,6 +9,7 @@ Packages: fastapi, uvicorn, pymongo, requests, folium
 
 
 ## API Endpoints
+
 GET
 /
 Lists endpoints.
@@ -44,11 +45,11 @@ GET
 Filters by origin/destination.
 
 
-## Database: MONGODB
+## Database:MONGODB
 Collections in database:
-1)active_flights: Ongoing flights (flight ID, path, status).
+1. active_flights: Ongoing flights (flight ID, path, status).
 Indexes: flight_id (unique), origin/destination (compound).
-2)completed_flights: Archived flights.
+2.completed_flights: Archived flights.
 Index: flight_id.
 
 
